@@ -1,10 +1,23 @@
-# 🦉 Beifong: Your Junk-Free, Personalized Information and Podcasts
+# Beifong
 
-[![Follow @DeadManAI](https://img.shields.io/badge/Follow-@DeadManAI-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/DeadManAI)
+Personalized information and podcast generation pipeline.
 
 ![image](https://github.com/user-attachments/assets/b2f24f12-6f80-46fa-aa31-ee42e17765b1)
 
-Beifong manages your trusted articles and social media platform sources. It generates podcasts from the content you trust and curate. It handles the complete pipeline, from data collection and analysis to the production of scripts and visuals.
+This repository is my working adaptation of the Beifong stack for curated content ingestion, analysis, and audio generation. It is based on upstream work and has been modified for my own workflow, tooling, and deployment preferences.
+
+If you are looking for the original upstream project, see [arun477/beifong](https://github.com/arun477/beifong).
+
+## What This Version Focuses On
+
+- curated information intake from trusted sources
+- content analysis and filtering
+- podcast and media generation workflows
+- local experimentation with automation and integrations
+
+## Provenance
+
+This repository is derived from upstream work by [arun477](https://github.com/arun477/beifong). Original authorship of the base project remains upstream unless explicitly noted otherwise in this repository.
 
 ▶️ [Watch demo video HD](https://www.canva.com/design/DAGoUfv8ICM/Oj-vJ19AvZYDa2SwJrCWKw/watch?utm_content=D[…]hare&utm_medium=link2&utm_source=uniquelinks&utlId=h2508379667)
 
@@ -80,11 +93,10 @@ Before installing Beifong, ensure you have:
 
 ```bash
 # Clone the repository
-git clone https://github.com/arun477/beifong.git
+git clone https://github.com/Death-Incarnate/beifong.git
 cd beifong
 
 # Create virtual environment
-cd beifong
 python -m venv venv
 source venv/bin/activate
 
@@ -95,8 +107,6 @@ pip install -r requirements.txt
 python -m playwright install
 
 # (Optional but recommended) Download demo content
-# Navigate to the beifong directory if not already there
-cd beifong  # Skip if already in the beifong folder
 # This populates the system with sample data, curated source feeds, and assets
 python bootstrap_demo.py
 ```
@@ -643,9 +653,4 @@ Some of the data collection features rely on browser automation, which sometimes
 
 ## Updates
 
-🚀 **[Repo](https://github.com/arun477/beifong)**
-
-
----
-
-Built by [@DeadManAI](https://x.com/DeadManAI) — Army vet. AI builder. Founder of Dead Empire.
+🚀 **[Repo](https://github.com/Death-Incarnate/beifong)**
